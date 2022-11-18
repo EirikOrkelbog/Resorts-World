@@ -3,13 +3,85 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
-		<title>Boilerplate</title>
-		<link rel="stylesheet" href="">
+		<title>Hovedprosjekt</title>
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/fonts.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<script src=""></script>
 	</head>
 
 	<body class="body">
-		
+		<header>
+			<nav class="nav">
+				<ul>
+					<li><a href=""><img src="./assets/logo/logo.svg" class="logo" alt=""></a></li>
+					<li><div class="line"></div></li>
+					<li><a href=""><img src="./assets/icons/home.svg" class="icon-home" alt=""></a>Home</li>
+				</ul>
 
-		<script src=""></script>
+				<ul class="nav__hotels-list">
+					<li>hilton</li>
+					<li>crockfords</li>
+					<li>conrad</li>
+					<li>
+						<div class="flex-container nav__circle-gap">
+							<span>start planning</span>
+							
+							<div class="nav__circle">
+								<img src="./assets/icons/arrow_forward.svg" class="nav__hotels-arrow" alt="">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<section class="section__main-video">
+				<div class="flex-container absolute">
+					<span class="pause-video">pause video</span>
+
+					<div class="span-container">
+						<img src="./assets/icons/arrow_forward.svg" class="scroll__explore-arrow" alt="">
+						<span class="scroll__explore">scroll to explore</span>
+						<img src="./assets/icons/arrow_forward.svg" class="scroll__explore-arrow" alt="">
+					</div>
+				</div>
+
+				<video autopla muted loop id="myVideo">
+					<source src="./assets/video/EXPEDIA_072022_HERO_V3.mp4" type="video/mp4">
+				</video>
+
+				<h1>
+					<span class="h1__first-span">this is</span>
+					<span class="h1__second-span">our world</span>
+				</h1>
+
+				<div class="flex-container h2__container">
+					<h2>a journey by:</h2>
+					<h2>hilton</h2>
+					<h2>crockfords</h2>
+					<h2>conrad</h2>
+				</div>
+
+				<div class="flex-container nav__secondary">
+					<p>© 2022 Expedia, Inc., an <a class="link__expedia-group">expedia group</a> company. All Rights Reserved</p>
+
+					<ul>
+						<li><a><img src="./assets/icons/facebook.svg" class="social-links" alt=""></a></li>
+						<li><a><img src="./assets/icons/twitter.svg" class="social-links" alt=""></a></li>
+						<li><a><img src="./assets/icons/linkedIn.svg" class="social-links" alt=""></a></li>
+						<li><a><img src="./assets/icons/instagram.svg" class="social-links" alt=""></a></li>
+					</ul>
+
+					<ul>
+						<li>Privacy Policy</li>
+						<li>Terms of Use</li>
+						<li>Do not sell my personal information</li>
+					</ul>
+				</div>
+			</section>
+			<section class="section__about"></section>
+		</main>
+
 	</body>
 </html>

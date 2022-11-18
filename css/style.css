@@ -1,0 +1,191 @@
+#myVideo {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+h1 {
+	font-size: 30vh;
+	position: absolute;
+	bottom: 8%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	color: white;
+	z-index: 10;
+	text-transform: capitalize;
+}
+
+h2 {
+	color: #EFDBC0;
+	text-transform: uppercase;
+}
+
+ul {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	list-style: none;
+}
+
+li {
+	cursor: pointer;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0 1rem;
+	z-index: 20;
+	text-transform: uppercase;
+}
+
+.line {
+	width: 1px;
+	height: 25px;
+	background: white;
+	cursor: auto;
+}
+
+.logo {
+	width: 8rem;
+}
+
+.icon-home {
+	width: 1rem;
+	margin-right: .3rem;
+}
+
+.link__expedia-group {
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.link__expedia-group:hover {
+	color: rgba(255, 255, 255, 0.451);
+	transition: color .4s,opacity .4s;
+}
+
+.nav__circle {
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #d8293a;
+}
+
+.nav__circle-gap {
+	gap: .3rem;
+}
+
+.nav__hotels-arrow {
+	width: .6rem;
+}
+
+.nav__hotels-list > li:last-child {
+	margin-left: 1rem;
+}
+
+.h1__first-span {
+	display: block;
+	width: 100vw;
+}
+
+.h1__second-span {
+	display: block;
+	width: 100vw;
+	margin-top: -5rem;
+	background: linear-gradient(#ffffff, #ffffff, #606060 90%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+}
+
+.social-links {
+	width: 1.5rem;
+}
+
+.span-container {
+	transform: rotate(90deg);
+	margin: -5rem;
+}
+
+.scroll__explore {
+	color: #EFDBC0;
+	margin: 0 .5rem;
+}
+
+.scroll__explore-arrow {
+	transform: rotate(-90deg);
+}
+
+.pause-video {
+	margin: -2rem;
+	transform: rotate(-90deg);
+	color: #EFDBC0;
+}
+
+.absolute {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-transform: uppercase;
+	z-index: 20;
+}
+
+.body {
+	width: 600vw;
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+
+.main {
+	display: flex;
+	flex-direction: row;	
+}
+
+.section__main-video {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.flex-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 1rem;
+}
+
+.h2__container {
+	justify-content: space-around;
+	z-index: 20;
+}
+
+.nav__secondary {
+	z-index: 20;
+}
+
+.section__about {
+	width: 80vw;
+	height: 100vh;
+	background-color: red;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
