@@ -28,7 +28,7 @@
 							
 							<div class="nav__circle">
 								<img src="./assets/icons/arrow_forward.svg" class="nav__hotels-arrow" alt="">
-								<img src="./assets/icons/arrow_forward.svg" class="hotels__arrow-hidden" alt="">
+								<img src="./assets/icons/arrow_forward.svg" class="arrow-hidden" alt="">
 							</div>
 						</div>
 					</li>
@@ -38,16 +38,22 @@
 		<main class="main">
 			<section class="section__main-video">
 				<div class="flex-container absolute">
-					<span class="pause-video">pause video</span>
+					<a class="pause-video">pause video</a>
 
 					<div class="span-container">
-						<img src="./assets/icons/arrow_forward.svg" class="scroll__explore-arrow" alt="">
+						<div class="arrow__container">
+							<img src="./assets/icons/arrow_forward.svg" class="scroll__arrow scroll__arrow-active" alt="">
+							<img src="./assets/icons/arrow_forward.svg" class="scroll__arrow scroll__arrow-hidden" alt="">
+						</div>
 						<span class="scroll__explore">scroll to explore</span>
-						<img src="./assets/icons/arrow_forward.svg" class="scroll__explore-arrow" alt="">
+						<div class="arrow__container">
+							<img src="./assets/icons/arrow_forward.svg" class="scroll__arrow scroll__arrow-active" alt="">
+							<img src="./assets/icons/arrow_forward.svg" class="scroll__arrow scroll__arrow-hidden" alt="">
+						</div>
 					</div>
 				</div>
 
-				<video autoplay muted loop id="myVideo">
+				<video autopla muted loop id="myVideo">
 					<source src="./assets/video/EXPEDIA_072022_HERO_V3.mp4" type="video/mp4">
 				</video>
 

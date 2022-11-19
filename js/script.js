@@ -1,6 +1,8 @@
+// Nav arrow 
+
 const navCircle = document.querySelector('.nav__circle');
 const navArrow = document.querySelector('.nav__hotels-arrow');
-const navArrowHidden = document.querySelector('.hotels__arrow-hidden');
+const navArrowHidden = document.querySelector('.arrow-hidden');
 
 
 navCircle.addEventListener('mouseenter', handleNavCircleEnter);
@@ -13,9 +15,6 @@ function handleNavCircleEnter(event) {
 function handleNavCircleLeave(event) {
 	translateArrowLeave();
 }
-
-
-
 
 
 function translateArrowEnter() {
