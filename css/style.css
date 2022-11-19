@@ -83,6 +83,7 @@ li {
 }
 
 .nav__circle {
+	position: relative;
 	width: 2.5rem;
 	height: 2.5rem;
 	border-radius: 50%;
@@ -90,6 +91,7 @@ li {
 	align-items: center;
 	justify-content: center;
 	background-color: #d8293a;
+	overflow: hidden;
 }
 
 .nav__circle-gap {
@@ -97,7 +99,23 @@ li {
 }
 
 .nav__hotels-arrow {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: .6rem;
+	transition: .3s ease-in-out;
+
+}
+
+.hotels__arrow-hidden {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-400%, -50%);
+	width: .6rem;
+	transition: .3s ease-in-out;
+
 }
 
 .nav__hotels-list > li:last-child {
