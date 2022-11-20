@@ -132,3 +132,40 @@ function showConradImage() {
 function hideConradImage() {
 	conradLink.classList.remove('link__image-conrad--hover');
 }
+
+
+// Scroll to explore 
+
+const sectionAbout = document.querySelector('.section__about');
+const scrollToExplore = document.querySelector('.span-container');
+
+scrollToExplore.addEventListener('click', handleScrollToExploreClick);
+
+function handleScrollToExploreClick(event) {
+	scrollToSectionAbout();
+}
+
+function scrollToSectionAbout() {
+	sectionAbout.scrollIntoView({behavior: "smooth", inline: "start"})
+}
+
+
+
+// pause video 
+
+const video = document.querySelector('.pause-video');
+const backgroundVideo = document.querySelector('.background__video');
+
+video.addEventListener('click', handlePauseClick);
+
+function handlePauseClick(event) {
+	videoPlayPause();
+}
+
+function videoPlayPause() {
+	if (backgroundVideo.paused) {
+		backgroundVideo.play();
+	} else {
+		backgroundVideo.pause();
+	}
+}

@@ -1,4 +1,4 @@
-#myVideo {
+.background__video {
 	width: 100vw;
 	height: 100vh;
 	object-fit: cover;
@@ -23,7 +23,7 @@ h1 {
 	transform: translateX(-50%);
 	text-align: center;
 	color: white;
-	z-index: 2;
+	z-index: 1;
 }
 
 h2 {
@@ -51,7 +51,7 @@ li, a {
 	top: 0;
 	left: 0;
 	padding: 1rem;
-	z-index: 999;
+	z-index: 99;
 	text-transform: uppercase;
 }
 
@@ -221,9 +221,12 @@ li, a {
 
 .span-container {
 	display: flex;
-	margin: -5rem;
-	transform: rotate(90deg);
-	z-index: 3;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-right: -2rem;
+	transform: translateY(-50%) rotate(90deg);
+	z-index: 10;
 	cursor: pointer;
 }
 
@@ -264,19 +267,16 @@ li, a {
  }
 
 .pause-video {
-	margin: -2rem;
-	transform: rotate(-90deg);
-	color: #EFDBC0;
-	z-index: 3;
-	cursor: pointer;
-}
-
-.absolute {
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
-	text-transform: uppercase;
-	z-index: 2;
+	left: 0;
+	transform: translateY(-50%) rotate(-90deg);
+	color: #EFDBC0;
+	background-color: transparent;
+	border: none;
+	font-size: 1rem;
+	z-index: 10;
+	cursor: pointer;
 }
 
 .body {
@@ -334,11 +334,11 @@ li, a {
 
 .h2__container {
 	justify-content: space-around;
-	z-index: 2;
+	z-index: 1;
 }
 
 .nav__secondary {
-	z-index: 2;
+	z-index: 10;
 }
 
 .section__about {
