@@ -88,6 +88,46 @@ li, a {
 	transform: scaleX(1);
 }
 
+.hotel__link {
+	position: relative;
+}
+
+.link__image-hilton--hover {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 15%);
+	width: 180px;
+	height: 90px;
+	background: url(../assets/images/RWLV_HILTON_HERO.webp);
+	background-position: center;
+	background-size: cover;
+	transition: .3s ease-in-out;
+}
+
+.link__image-crockfords--hover {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 15%);
+	width: 180px;
+	height: 90px;
+	background: url(../assets/images/RWLV_CROCKFORDS_HERO.webp);
+	background-position: center;
+	background-size: cover;
+	transition: .3s ease-in-out;
+}
+
+.link__image-conrad--hover {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 15%);
+	width: 180px;
+	height: 90px;
+	background: url(../assets/images/RWLV_CONRAD_HERO.webp);
+	background-position: center;
+	background-size: cover;
+	transition: .3s ease-in-out;
+}
+
 .policy__link::after {
 	content: "";
 	display: block;
