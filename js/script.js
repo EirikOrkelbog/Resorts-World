@@ -29,7 +29,7 @@ function translateArrowLeave() {
 }
 
 
-// Changing color 
+// Changing color on start planning circle 
 const [red, green, blue] = [216, 41, 58]
 
 window.addEventListener('scroll', () => {
@@ -152,7 +152,6 @@ function scrollToSectionAbout() {
 
 
 // pause video 
-
 const video = document.querySelector('.pause-video');
 const backgroundVideo = document.querySelector('.background__video');
 
@@ -169,3 +168,14 @@ function videoPlayPause() {
 		backgroundVideo.pause();
 	}
 }
+
+
+// Horizontal scroll
+// const main = document.querySelector('.main');
+
+// main.addEventListener('wheel', (event) => {
+// 	event.preventDefault();
+// 	main.scrollBy({
+// 	left: event.deltaY < 0 ? -30 : 30
+// 	}); 
+// });
