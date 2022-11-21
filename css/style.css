@@ -411,6 +411,43 @@ About section
 	background-color: rgb(216, 41, 58);
 }
 
+.about__pause-video {
+	color: white;
+}
+
 ::-webkit-scrollbar {
 	display: none;
+}
+
+
+
+
+/* 
+
+Section accomodation
+
+*/
+
+
+.section__accomodation {
+	width: 90vw;
+	height: 100vh;
+	background-image: url(../assets/images/Entrance_Resorts_World_Las_Vegas.webp);
+}
+
+
+
+
+/* 
+
+Section entertainment 
+*/
+
+
+.entertainment__expand-container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 40vw;
+	background-color: black;
 }
