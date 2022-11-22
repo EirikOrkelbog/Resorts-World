@@ -1,0 +1,47 @@
+
+.span-container {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-right: -2rem;
+	transform: translateY(-50%) rotate(90deg);
+	z-index: 10;
+	cursor: pointer;
+}
+
+.scroll__explore {
+	color: #EFDBC0;
+	margin: 0 .5rem;
+}
+
+.arrow__container {
+	position: relative;
+	width: 1rem;
+	height: 1rem;
+	overflow: hidden;
+}
+
+.scroll__arrow {
+	position: absolute;
+	transform: translateY(0%) rotate(-90deg);
+}
+
+.scroll__arrow-active {
+	animation: active 2s infinite;
+}
+
+@keyframes active {
+	from {transform: translateY(0%) rotate(-90deg);}
+	to {transform: translateY(-200%) rotate(-90deg);}
+ }
+
+.scroll__arrow-hidden {
+	transform: translateY(200%) rotate(-90deg);
+	animation: hidden 2s infinite;
+}
+
+@keyframes hidden {
+	from {transform: translateY(200%) rotate(-90deg);}
+	to {transform: translateY(0%) rotate(-90deg);}
+ }

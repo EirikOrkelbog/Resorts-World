@@ -2,23 +2,22 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
-		<title>Hovedprosjekt</title>
-		<link rel="stylesheet" href="./css/reset.css">
-		<link rel="stylesheet" href="./css/fonts.css">
-		<link rel="stylesheet" href="./css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- initial scale? -->
+		<title>Resort World</title>
+		<link rel="stylesheet" href="./css/main.css">
+		<script src="./js/script.js"></script>
 	</head>
 
-	<body class="body">
-		<header>
+	<body>
+		<header class="header">
+			<div class="header__logo">
+				<a href=""><img src="./assets/logo/logo.svg" class="logo" alt=""></a>
+				<div class="line"></div>
+				<a href=""><img src="./assets/icons/home.svg" class="icon-home" alt="">Home</a>
+			</div>
 			<nav class="nav">
-				<ul>
-					<li><a href=""><img src="./assets/logo/logo.svg" class="logo" alt=""></a></li>
-					<li><div class="line"></div></li>
-					<li><a href=""><img src="./assets/icons/home.svg" class="icon-home" alt=""></a>Home</li>
-				</ul>
-
-				<ul class="nav__hotels-list">
+				<menu class="nav__menu">
 					<li class="hotel__link">hilton
 						<div class="link__image-hilton"></div>
 					</li>
@@ -41,13 +40,21 @@
 							</div>
 						</div>
 					</li>
-				</ul>
+				</menu>
+
+				<div class="nav__mobile">
+					<div class="mobile__dropdown">
+						<button class="mobile__dropdown-button">Hotels</button>
+						<img src="" alt="">
+					</div>
+					<button class="mobile__button-book">Book Now</button>
+				</div>
 			</nav>
 		</header>
 		<main class="main">
 			<div class="background__dark"></div>
 			
-			<section class="section__main-video">
+			<section class="section__main">
 				<button class="pause-video">pause video</button>
 
 				<div class="span-container">
@@ -66,26 +73,26 @@
 					<source src="./assets/video/EXPEDIA_072022_HERO_V3.mp4" type="video/mp4">
 				</video>
 
-				<h1>
+				<h1 class="h1">
 					<span class="h1__first-span">This is</span>
 					<span class="h1__second-span">Our World</span>
 				</h1>
 
 				<div class="flex-container h2__container">
-					<h2>a journey by:</h2>
-					<h2>hilton</h2>
-					<h2>crockfords</h2>
-					<h2>conrad</h2>
+					<h4>a journey by:</h4>
+					<h4>hilton</h4>
+					<h4>crockfords</h4>
+					<h4>conrad</h4>
 				</div>
 
-				<div class="flex-container nav__secondary">
-					<p>© 2022 Expedia, Inc., an <a class="link__expedia-group">expedia group</a> company. All Rights Reserved</p>
+				<div class="footer__white">
+					<p>© 2022 Expedia, Inc., an <a class="footer__expedia-link">expedia group</a> company. All Rights Reserved</p>
 
 					<ul>
-						<li><a><img src="./assets/icons/facebook.svg" class="social-links" alt=""></a></li>
-						<li><a><img src="./assets/icons/twitter.svg" class="social-links" alt=""></a></li>
-						<li><a><img src="./assets/icons/linkedIn.svg" class="social-links" alt=""></a></li>
-						<li><a><img src="./assets/icons/instagram.svg" class="social-links" alt=""></a></li>
+						<li><a><img src="./assets/icons/facebook.svg" class="social-link" alt=""></a></li>
+						<li><a><img src="./assets/icons/twitter.svg" class="social-link" alt=""></a></li>
+						<li><a><img src="./assets/icons/linkedIn.svg" class="social-link" alt=""></a></li>
+						<li><a><img src="./assets/icons/instagram.svg" class="social-link" alt=""></a></li>
 					</ul>
 
 					<ul>
@@ -183,7 +190,5 @@
 				</div>
 			</section>
 		</main>
-		<script src="./js/script.js"></script>
-
 	</body>
 </html>

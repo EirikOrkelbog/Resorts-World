@@ -1,0 +1,33 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 1rem;
+	z-index: 99;
+}
+
+.header__logo {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.logo {
+	width: 8rem;
+}
+
+.line {
+	width: 1.2px;
+	height: 24px;
+	background: var(--darkerWhite-color);
+	cursor: auto;
+}
+
+.icon-home {
+	width: 1rem;
+	margin-right: .3rem;
+}

@@ -1,0 +1,47 @@
+.entertainment__expand-container {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	width: 70vw;
+}
+
+.expand-hilton {
+	background-image: url(../assets/images/Hilton_Resorts_World_Las_Vegas.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.expand-crockfords {
+	background-image: url(../assets/images/Crockfords_Resorts_World_Las_Vegas.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.expand-conrad {
+	background-image: url(../assets/images/Conrad_Resorts_World_Las_Vegas.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.expand__content-container {
+	display: flex;
+	align-items: flex-end;
+	padding: 4rem;
+}
+
+.expand__paragraph-container {
+	width: 24vw;
+	padding-left: 2rem;
+}
+
+.expand-image {
+	height: 60vh;
+}
+
+.visit-hotel {
+	margin-top: 2rem;
+}
+
+.visit-hotel-text {
+	font-size: .8rem;
+}

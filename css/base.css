@@ -1,0 +1,22 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: white;
+}
+
+main {
+	display: flex;
+	width: 600vw;
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+
+ul {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}

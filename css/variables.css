@@ -1,4 +1,22 @@
 :root {
-	--background-color: rgb(6, 11, 26);
-	--border-color: rgb(255, 255, 255, 0.1);
+	--background-color: rgb(216, 41, 58);
+	--secondary-background-color: rgb(255, 255, 255);
+
+	--baige-color: rgb(239, 219, 192);
+	--white-color: rgb(255, 255, 255);
+	--darkerWhite-color: rgb(240, 229, 216);
+	--black-color: rgb(0, 0, 0);
+	--red-color: rgb(216, 41, 58);
+	--gold-color: rgb(156, 139, 112);
+	--darkBlue-color: rgb(27, 32, 48);
+	--lightBlue-color: rgb(105, 115, 144);
+	
+	--padding: 1rem;
+
+	--border-radius: 1rem;
+	--border-size: 3px;
+	
+	--font-size-large: 1.5rem;
+	--font-size-regular: 1rem;
+	--font-size-small: 0.75rem;
 }

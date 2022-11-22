@@ -1,0 +1,38 @@
+.footer__white {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 1rem;
+	z-index: 10;
+}
+
+.footer__expedia-link {
+	font-weight: 700;
+}
+
+.social-link {
+	width: 1.5rem;
+	transition: .3s ease-in-out;
+}
+
+.social-link:hover {
+	transform: scale(1.2);
+}
+
+.policy__link::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: .5px;
+	background-color: rgb(255, 255, 255);
+	transform: scaleX(0);
+	transform-origin: bottom left;
+	transition: transform .4s;
+	transition-delay: .1s;
+}
+
+.policy__link:hover::after {
+	transform-origin: bottom left;
+	transform: scaleX(1);
+}
