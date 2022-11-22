@@ -1,6 +1,7 @@
 .nav__menu {
-	display: flex;
 	align-items: center;
+	gap: 1rem;
+	text-transform: uppercase;
 	display: none;
 }
 
@@ -31,7 +32,7 @@
 	transform: translate(-50%, 15%);
 	width: 180px;
 	height: 90px;
-	background: url(../assets/images/RWLV_HILTON_HERO.webp);
+	background: url(../../assets/images/RWLV_HILTON_HERO.webp);
 	background-position: center;
 	background-size: cover;
 	transition: .3s ease-in-out;
@@ -43,7 +44,7 @@
 	transform: translate(-50%, 15%);
 	width: 180px;
 	height: 90px;
-	background: url(../assets/images/RWLV_CROCKFORDS_HERO.webp);
+	background: url(../../assets/images/RWLV_CROCKFORDS_HERO.webp);
 	background-position: center;
 	background-size: cover;
 	transition: .3s ease-in-out;
@@ -55,12 +56,18 @@
 	transform: translate(-50%, 15%);
 	width: 180px;
 	height: 90px;
-	background: url(../assets/images/RWLV_CONRAD_HERO.webp);
+	background: url(../../assets/images/RWLV_CONRAD_HERO.webp);
 	background-position: center;
 	background-size: cover;
 	transition: .3s ease-in-out;
 }
 
+.nav__circle-container {
+	display: flex;
+	align-items: center;
+	gap: .3rem;
+	margin-left: 2rem;
+}
 
 .nav__circle {
 	position: relative;
@@ -75,13 +82,7 @@
 	isolation: isolate;
 }
 
-.nav__circle-container {
-	display: flex;
-	align-items: center;
-	gap: .3rem;
-}
-
-.nav__hotels-arrow {
+.nav__arrow {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -101,6 +102,8 @@
 
 }
 
-.nav__hotels-list > li:last-child {
-	margin-left: 1rem;
+@media screen and (min-width: 1200px) {
+	.nav__menu {
+		display: flex;
+	}
 }

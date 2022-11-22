@@ -4,19 +4,26 @@ body {
 	color: white;
 }
 
-main {
-	display: flex;
-	width: 600vw;
-	overflow-y: hidden;
-	overflow-x: scroll;
-}
-
 ul {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
 }
 
+button {
+	cursor: pointer;
+}
+
 ::-webkit-scrollbar {
 	display: none;
+}
+
+
+@media screen and (min-width: 1200px) {
+	main {
+		display: flex;
+		width: 600vw;
+		overflow-y: hidden;
+		overflow-x: scroll;
+	}
 }

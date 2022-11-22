@@ -6,7 +6,7 @@
 		<!-- initial scale? -->
 		<title>Resort World</title>
 		<link rel="stylesheet" href="./css/main.css">
-		<script src="./js/script.js"></script>
+		<script type="module" src="./js/main.js"></script>
 	</head>
 
 	<body>
@@ -35,7 +35,7 @@
 							<span>start planning</span>
 							
 							<div class="nav__circle">
-								<img src="./assets/icons/arrow_forward.svg" class="nav__hotels-arrow" alt="">
+								<img src="./assets/icons/arrow_forward.svg" class="nav__arrow" alt="">
 								<img src="./assets/icons/arrow_forward.svg" class="arrow-hidden" alt="">
 							</div>
 						</div>
@@ -44,32 +44,35 @@
 
 				<div class="nav__mobile">
 					<div class="mobile__dropdown">
-						<button class="mobile__dropdown-button">Hotels</button>
-						<img src="" alt="">
+						<button type="button" class="mobile__dropdown-button">Hotels</button>
+						<img src="./assets/icons/expand.svg" class="expand__dropdown-icon" alt="">
 					</div>
 					<button class="mobile__button-book">Book Now</button>
 				</div>
 			</nav>
 		</header>
 		<main class="main">
-			<div class="background__dark"></div>
+			<div class="background__dim-hover"></div>
 			
 			<section class="section__main">
 				<button class="pause-video">pause video</button>
 
-				<div class="span-container">
-					<div class="arrow__container">
+				<img src="./assets/icons/play.svg" class="mobile__play-pause play" alt="">
+				<img src="./assets/icons/pause.svg" class="mobile__play-pause pause" alt="">
+
+				<div class="scroll__explore">
+					<div class="scroll__explore-arrow">
 						<img src="./assets/icons/arrow_forward.svg" class="scroll__arrow scroll__arrow-active" alt="">
 						<img src="./assets/icons/arrow_forward.svg" class="scroll__arrow scroll__arrow-hidden" alt="">
 					</div>
-					<span class="scroll__explore">scroll to explore</span>
-					<div class="arrow__container">
+					<span class="scroll__explore-text">scroll to explore</span>
+					<div class="scroll__explore-arrow">
 						<img src="./assets/icons/arrow_forward.svg" class="scroll__arrow scroll__arrow-active" alt="">
 						<img src="./assets/icons/arrow_forward.svg" class="scroll__arrow scroll__arrow-hidden" alt="">
 					</div>
 				</div>
 
-				<video autoplay muted loop class="background__video">
+				<video autoplay muted loop class="main__background-video">
 					<source src="./assets/video/EXPEDIA_072022_HERO_V3.mp4" type="video/mp4">
 				</video>
 
@@ -78,7 +81,7 @@
 					<span class="h1__second-span">Our World</span>
 				</h1>
 
-				<div class="flex-container h2__container">
+				<div class="h4__container">
 					<h4>a journey by:</h4>
 					<h4>hilton</h4>
 					<h4>crockfords</h4>

@@ -1,4 +1,36 @@
 .nav__mobile {
 	display: flex;
+	align-items: center;
+	gap: 1rem;
 }
 
+.mobile__dropdown {
+	cursor: pointer;
+}
+
+.mobile__dropdown-button {
+	background-color: transparent;
+	border: none;
+	color: var(--white-color);
+	font-size: var(--font-size-regular);
+}
+
+.mobile__button-book {
+	background-color: var(--red-color);
+	border: none;
+	font-size: var(--font-size-regular);
+	color: var(--white-color);
+	padding: .8rem 1rem;
+	border-radius: 30px;
+}
+
+.expand__dropdown-icon {
+	width: .7rem;
+}
+
+
+@media screen and (min-width: 1200px) {
+	.nav__mobile {
+		display: none;
+	}
+}

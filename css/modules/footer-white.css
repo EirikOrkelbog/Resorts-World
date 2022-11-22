@@ -1,14 +1,18 @@
 .footer__white {
-	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
 	padding: 1rem;
 	z-index: 10;
+	display: none;
 }
 
 .footer__expedia-link {
 	font-weight: 700;
+}
+
+.footer__expedia-link:hover {
+	color: var(--baige-color);
 }
 
 .social-link {
@@ -35,4 +39,11 @@
 .policy__link:hover::after {
 	transform-origin: bottom left;
 	transform: scaleX(1);
+}
+
+
+@media screen and (min-width: 1200px) {
+	.footer__white {
+		display: flex;
+	}
 }

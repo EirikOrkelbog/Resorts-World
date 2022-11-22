@@ -1,6 +1,5 @@
 
-.span-container {
-	display: flex;
+.scroll__explore {
 	position: absolute;
 	top: 50%;
 	right: 0;
@@ -8,14 +7,15 @@
 	transform: translateY(-50%) rotate(90deg);
 	z-index: 10;
 	cursor: pointer;
+	display: none;
 }
 
-.scroll__explore {
+.scroll__explore-text {
 	color: #EFDBC0;
 	margin: 0 .5rem;
 }
 
-.arrow__container {
+.scroll__explore-arrow {
 	position: relative;
 	width: 1rem;
 	height: 1rem;
@@ -45,3 +45,11 @@
 	from {transform: translateY(200%) rotate(-90deg);}
 	to {transform: translateY(0%) rotate(-90deg);}
  }
+
+
+
+ @media screen and (min-width: 1200px) {
+	.scroll__explore {
+		display: flex;
+	}
+}

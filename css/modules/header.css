@@ -17,7 +17,7 @@
 }
 
 .logo {
-	width: 8rem;
+	width: 6rem;
 }
 
 .line {
@@ -30,4 +30,11 @@
 .icon-home {
 	width: 1rem;
 	margin-right: .3rem;
+}
+
+
+@media screen and (min-width: 1200px) {
+	.logo {
+		width: 8rem;
+	}
 }
