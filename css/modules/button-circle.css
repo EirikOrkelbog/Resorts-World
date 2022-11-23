@@ -1,0 +1,48 @@
+.button__circle-container {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 5;
+}
+
+.button__circle {
+	position: relative;
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--baige-color);
+}
+
+.circle__play-sound {
+	margin: .8rem 0 .8rem 0;
+	transition: .4s ease-in-out;
+}
+
+.circle__play-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+@media screen and (min-width: 768px) {
+	.button__circle-container {
+		top: 70%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.button__circle-container {
+		top: 35%
+	}
+
+	.button__circle {
+		background-color: var(--red-color);
+	}
+}

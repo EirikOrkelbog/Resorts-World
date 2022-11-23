@@ -4,79 +4,81 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 90vw;
+	width: 100vw;
 	height: 100vh;
 	background-color: #d8293a;
 }
 
 .about-container {
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	position: relative;
 	width: 100%;
-	height: 70%;
-	margin-top: -4rem;
+	height: 100%;
+	padding: 4rem 0 1rem 0;
 }
 
 .about__video {
 	position: absolute;
-	top: 50%;
+	top: 15%;
 	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 40%;
+	transform: translateX(-50%);
+	width: 30rem;
 }
 
 .h2__about-section {
-	font-size: 9rem;
+	font-size: 4rem;
+	color: var(--baige-color);
 	text-transform: capitalize;
 	z-index: 5;
 }
 
-.paragraph__absolute {
+.paragraph__container {
+	width: 90%;
 	text-align: center;
 }
 
-.paragraph__container {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translate(-50%, 70%);
-	width: 50%;
+
+@media screen and (min-width: 768px) {
+	.about__video {
+		width: 40rem;
+	}
+
+	.h2__about-section {
+		font-size: 8rem;
+	}
+
+	.about-container {
+		padding: 0 0 1rem 0;
+	}
+
+	.resort-world {
+		margin-top: 6rem;
+	}
 }
 
-.play__circle-container {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+@media screen and (min-width: 992px) {
+	.paragraph__container {
+		width: 70%;
+	}
 }
 
-.about__play-circle {
-	position: relative;
-	width: 8rem;
-	height: 8rem;
-	border-radius: 50%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	background-color: rgb(216, 41, 58);
-}
+@media screen and (min-width: 1200px) {
+	.section__about {
+		width: 90vw;
+	}
 
-.about__pause-video {
-	color: white;
-}
+	.about-container {
+		padding: 3rem 0 6rem 0;
+	}
 
-.circle__play-sound {
-	margin: .8rem 0 .8rem 0;
-	transition: .4s ease-in-out;
-}
+	.resort-world {
+		margin-top: 13rem;
+	}
 
-.circle__play-icon {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	.about__video {
+		top: 20%;
+	}
 }

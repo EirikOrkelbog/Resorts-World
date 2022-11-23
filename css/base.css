@@ -4,6 +4,10 @@ body {
 	color: white;
 }
 
+main {
+	overflow: hidden;
+}
+
 ul {
 	display: flex;
 	align-items: center;

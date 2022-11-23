@@ -12,6 +12,10 @@
 	display: none;
 }
 
+.about__pause-video {
+	color: white;
+}
+
 @media screen and (min-width: 1200px) {
 	.pause-video {
 		display: block;

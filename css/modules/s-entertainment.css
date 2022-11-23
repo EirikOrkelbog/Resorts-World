@@ -6,19 +6,19 @@
 }
 
 .expand-hilton {
-	background-image: url(../assets/images/Hilton_Resorts_World_Las_Vegas.jpg);
+	background-image: url(../../assets/images/Hilton_Resorts_World_Las_Vegas.jpg);
 	background-size: cover;
 	background-position: center;
 }
 
 .expand-crockfords {
-	background-image: url(../assets/images/Crockfords_Resorts_World_Las_Vegas.jpg);
+	background-image: url(../../assets/images/Crockfords_Resorts_World_Las_Vegas.jpg);
 	background-size: cover;
 	background-position: center;
 }
 
 .expand-conrad {
-	background-image: url(../assets/images/Conrad_Resorts_World_Las_Vegas.jpg);
+	background-image: url(../../assets/images/Conrad_Resorts_World_Las_Vegas.jpg);
 	background-size: cover;
 	background-position: center;
 }
