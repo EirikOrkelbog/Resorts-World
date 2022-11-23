@@ -1,7 +1,8 @@
 .nav__mobile {
 	display: flex;
 	align-items: center;
-	gap: 1rem;
+	gap: .5rem;
+	mix-blend-mode: difference;
 }
 
 .mobile__dropdown {
@@ -18,9 +19,9 @@
 .mobile__button-book {
 	background-color: var(--red-color);
 	border: none;
-	font-size: var(--font-size-regular);
+	font-size: var(--font-size-small);
 	color: var(--white-color);
-	padding: .8rem 1rem;
+	padding: .4rem .8rem;
 	border-radius: 30px;
 }
 
@@ -28,6 +29,16 @@
 	width: .7rem;
 }
 
+@media screen and (min-width: 768px) {
+	.mobile__button-book {
+		padding: .6rem 1rem;
+		font-size: var(--font-size-regular);
+	}
+
+	.nav__mobile {
+		gap: 1rem;
+	}
+}
 
 @media screen and (min-width: 1200px) {
 	.nav__mobile {

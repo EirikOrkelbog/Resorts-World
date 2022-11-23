@@ -3,6 +3,7 @@
 	gap: 1rem;
 	text-transform: uppercase;
 	display: none;
+	mix-blend-mode: difference;
 }
 
 .hotel__link::after {

@@ -3,12 +3,14 @@ import navArrow from './modules/nav-arrow.js';
 import showNavImage from './modules/nav-hover-image.js';
 import pauseVideo from './modules/pause-video.js';
 import scrollExplore from './modules/scroll-explore.js';
+import headerMobileColor from './modules/header-mobile-color.js';
 
 navArrow();
 // dimBackground();
 showNavImage();
 pauseVideo();
 scrollExplore();
+headerMobileColor();
 
 // Changing color on start planning circle 
 // const [red, green, blue] = [216, 41, 58]
