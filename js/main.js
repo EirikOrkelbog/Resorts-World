@@ -5,6 +5,8 @@ import scrollExplore from './modules/scroll-explore.js';
 import headerMobileColor from './modules/header-mobile-color.js';
 import pauseAboutVideo from './modules/pause-about-video.js';
 import buttonCircle from './modules/button-circle.js';
+import visitHotelArrow from './modules/visit-hotel-arrow.js';
+
 
 navArrow();
 showNavImage();
@@ -13,6 +15,7 @@ scrollExplore();
 headerMobileColor();
 pauseAboutVideo();
 buttonCircle();
+visitHotelArrow();
 
 // Changing color on start planning circle 
 // const [red, green, blue] = [216, 41, 58]

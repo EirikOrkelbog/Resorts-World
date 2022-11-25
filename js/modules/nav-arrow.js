@@ -1,7 +1,6 @@
 export default function navArrow() {
 
 	const navCircleContainer = document.querySelector('.nav__circle-container');
-	const navCircle = document.querySelector('.nav__circle');
 	const navArrow = document.querySelector('.nav__arrow');
 	const navArrowHidden = document.querySelector('.arrow-hidden');
 

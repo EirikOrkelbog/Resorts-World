@@ -90,7 +90,6 @@
 	transform: translate(-50%, -50%);
 	width: .6rem;
 	transition: .3s ease-in-out;
-
 }
 
 .arrow-hidden {
@@ -100,7 +99,6 @@
 	transform: translate(-400%, -50%);
 	width: .6rem;
 	transition: .3s ease-in-out;
-
 }
 
 @media screen and (min-width: 1200px) {
