@@ -63,7 +63,9 @@
 
 	.entertainment__expand-container {
 		height: 100vh;
-		width: 90vw;
+		width: 33.3vw;
+		cursor: pointer;
+		transition: 1s ease-in-out;
 	}
 
 	.entertainment__content-container {
@@ -75,15 +77,14 @@
 	.expand__paragraph-container {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
+		align-items: center;
+		justify-content: center;
 		position: relative;
 		width: 24vw;
-		padding-left: 2rem;
 	}
 	
 	.expand-image {
-		display: block;
+		display: none;
 		height: 60vh;
 	}
 
@@ -95,7 +96,7 @@
 	}
 
 	.hotel__text {
-		display: block;
+		display: none;
 	}
 	
 	.visit-hotel-text {
@@ -115,7 +116,7 @@
 	}
 
 	.visit-hotel__container {
-		display: flex;
+		display: none;
 		align-items: center;
 		gap: .3rem;
 		margin-top: 2rem;

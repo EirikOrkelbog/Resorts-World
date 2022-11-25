@@ -6,6 +6,7 @@ import headerMobileColor from './modules/header-mobile-color.js';
 import pauseAboutVideo from './modules/pause-about-video.js';
 import buttonCircle from './modules/button-circle.js';
 import visitHotelArrow from './modules/visit-hotel-arrow.js';
+import expandEntertainmentContainer from './modules/expand-entertainment.js';
 
 
 navArrow();
@@ -16,6 +17,7 @@ headerMobileColor();
 pauseAboutVideo();
 buttonCircle();
 visitHotelArrow();
+expandEntertainmentContainer();
 
 // Changing color on start planning circle 
 // const [red, green, blue] = [216, 41, 58]
