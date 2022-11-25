@@ -1,8 +1,8 @@
 export default function buttonCircle() {
 	
-	const circlePlay = document.getElementById('button__circle-play');
-	const circleIcon = document.getElementById('button__circle-icon');
-	const circleSound = document.getElementById('button__circle-sound');
+	const circlePlay = document.querySelector('.circle__play-with');
+	const circleIcon = document.querySelector('.circle__play-icon');
+	const circleSound = document.querySelector('.circle__play-sound');
 	
 	window.addEventListener('resize', handleButtonCircleColor);
 	
@@ -26,7 +26,7 @@ export default function buttonCircle() {
 
 	// Moving text on button circle
 	const buttonCircle = document.querySelector('.button__circle');
-	const circleText = document.querySelectorAll('.circle__play-sound');
+	const circleText = document.querySelectorAll('.circle__text');
 
 	buttonCircle.addEventListener('mouseenter', handleCircleEnter);
 	buttonCircle.addEventListener('mouseleave', handleCircleLeave);

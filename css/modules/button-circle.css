@@ -23,6 +23,11 @@
 	transition: .4s ease-in-out;
 }
 
+.circle__play-with {
+	margin: .8rem 0 .8rem 0;
+	transition: .4s ease-in-out;
+}
+
 .circle__play-icon {
 	position: absolute;
 	top: 50%;
