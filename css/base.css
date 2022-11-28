@@ -8,6 +8,10 @@ main {
 	overflow-x: hidden;
 }
 
+h2 {
+	color: var(--baige-color);
+}
+
 ul {
 	display: flex;
 	align-items: center;
