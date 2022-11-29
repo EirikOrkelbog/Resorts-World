@@ -1,143 +1,188 @@
 .section__entertainment {
+	position: relative;
 	display: flex;
 	flex-direction: column;
-}
-
-.entertainment__expand-container {
-	display: flex;
-	position: relative;
-	align-items: center;
-	height: 45vh;
+	height: 100%;
 	width: 100vw;
+	padding: 1rem;
+	background-color: var(--red-color);
 }
 
-.expand-hilton {
-	background-image: url(../../assets/images/Hilton_Resorts_World_Las_Vegas.jpg);
-	background-size: cover;
-	background-position: center;
-}
-
-.expand-crockfords {
-	background-image: url(../../assets/images/Crockfords_Resorts_World_Las_Vegas.jpg);
-	background-size: cover;
-	background-position: center;
-}
-
-.expand-conrad {
-	background-image: url(../../assets/images/Conrad_Resorts_World_Las_Vegas.jpg);
-	background-size: cover;
-	background-position: center;
-}
-
-.hotel__logo {
-	position: absolute;
-	bottom: 10%;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-.visit-hotel__container {
+.entertainment__buy-tickets {
 	display: none;
 }
 
-.expand-image {
-	display: none;
+.entertainment__flex {
+	display: flex;
+	align-items: center;
 }
 
-.hotel__text {
-	display: none;
+.entertainment__image {
+	width: 50%;
 }
 
+.entertainment__h2 {
+	font-size: 8rem;
+}
+
+.cue-image {
+	margin: 0 0 1rem 1rem;
+}
+
+.the-image {
+	margin: 0 1rem 1rem 0;
+}
+
+.buy-tickets__container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 3rem 0;
+}
+
+.buy-tickets__button {
+	position: relative;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 0;
+	background-color: var(--baige-color);
+	transition: .3s ease-in-out;
+	cursor: pointer;
+}
+
+.buy-tickets__button:hover {
+	padding: 1.2rem;
+}
+
+.entertainment__h3 {
+	font-size: var(--font-size-large);
+	text-transform: uppercase;
+	color: var(--baige-color);
+}
+
+.entertainment__h3-first {
+	margin-bottom: 1rem;
+}
+
+.buy-tickets {
+	color: var(--baige-color);
+}
+
+.buy-tickets__circle {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--baige-color);
+}
+
+
+@media screen and (min-width: 768px) {
+	.entertainment__image {
+		width: 30%;
+	}
+
+	.entertainment__buy-tickets {
+		display: flex;
+		align-items: center;
+		gap: .5rem;
+		position: absolute;
+		top: 10%;
+		right: 5%;
+	}
+
+}
 
 @media screen and (min-width: 992px) {
-	.entertainment__expand-container {
-		height: 55vh;
+	.buy-tickets__container {
+		display: none;
+	}
+
+	.entertainment__headers {
+		margin-bottom: 9rem;
+	}
+
+	.entertainment__h2 {
+		font-size: 13rem;
+	}
+
+	.entertainment__the-image {
+		margin: -3rem 0;
 	}
 }
-
 
 @media screen and (min-width: 1200px) {
 	.section__entertainment {
 		flex-direction: row;
-	}
-
-	.entertainment__expand-container {
-		height: 100vh;
-		width: 33.3vw;
-		cursor: pointer;
-		transition: 1s ease-in-out;
-	}
-
-	.entertainment__content-container {
-		display: flex;
-		align-items: flex-end;
-		padding: 4rem;
-	}
-	
-	.expand__paragraph-container {
-		display: flex;
-		flex-direction: column;
 		align-items: center;
-		justify-content: center;
+		height: 100vh;
+		width: 60vw;
+	}
+
+	.entertainment__headers {
+		margin-bottom: 0;
+	}
+
+	.entertainment__h2 {
+		font-size: 10rem;
+	}
+
+	.entertainment__buy-tickets {
 		position: relative;
-		width: 24vw;
+		top: 0;
+		right: 0;
+	}
+
+	.entertainment__the-image {
+		margin: 0;
+	}
+
+	.entertainment__image {
+		width: 40%;
+	}
+
+	.cue-image {
+		margin: 0 0 0 1rem;
 	}
 	
-	.expand-image {
-		display: none;
-		height: 60vh;
+	.the-image {
+		margin: 0 1rem 0 0;
 	}
 
-	.hotel__logo {
-		position: relative;
-		left: 0;
-		transform: translateX(0%);
-		margin-bottom: 6rem;
+	.buy-tickets {
+		font-size: var(--font-size-small);
 	}
 
-	.hotel__text {
-		display: none;
-	}
-	
-	.visit-hotel-text {
-		font-size: .8rem;
-	}
-
-	.entertainment__button-circle {
-		position: relative;
+	.buy-tickets__circle {
 		width: 2.5rem;
 		height: 2.5rem;
-		border-radius: 50%;
+	}
+
+	.tickets__arrow {
+		width: .6rem;
+	}
+
+	.entertainment__buy-tickets {
+		margin: 1rem 0 3rem 0;
+	}
+
+	.entertainment__paragraphs {
 		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-color: rgb(216, 41, 58);
-		overflow: hidden;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 30%;
+		height: 100%;
 	}
 
-	.visit-hotel__container {
-		display: none;
-		align-items: center;
-		gap: .3rem;
-		margin-top: 2rem;
+	.entertainment__h3 {
+		font-size: 2rem;
+		text-align: right;
 	}
-
-	.arrow {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: .6rem;
-		transition: .3s ease-in-out;
-	}
-	
-	.arrow__hotel-hidden {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-400%, -50%);
-		width: .6rem;
-		transition: .3s ease-in-out;
-	}
-
 }

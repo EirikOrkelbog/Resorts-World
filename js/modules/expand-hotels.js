@@ -1,9 +1,9 @@
-export default function expandEntertainmentContainer() {
+export default function expandHotelsContainer() {
 
 	const expandHilton = document.querySelector('.expand-hilton');
 	const expandCrockfords = document.querySelector('.expand-crockfords');
 	const expandConrad = document.querySelector('.expand-conrad');
-	const containers = document.querySelectorAll('.entertainment__expand-container');
+	const containers = document.querySelectorAll('.hotels__expand-container');
 	const paragraphContainer = document.querySelectorAll('.expand__paragraph-container');
 	const image = document.querySelectorAll('.expand-image');
 	const text = document.querySelectorAll('.hotel__text');
