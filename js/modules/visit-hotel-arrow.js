@@ -3,10 +3,8 @@ export default function visitHotelArrow() {
 	const visitHotelContainer = document.querySelectorAll('.visit-hotel__container');
 	const arrow = document.querySelectorAll('.arrow');
 	const arrowHotelHidden = document.querySelectorAll('.arrow__hotel-hidden');
-	
-	let i = 0;
 
-	for (i = 0; i < visitHotelContainer.length; i += 1) {
+	for (let i = 0; i < visitHotelContainer.length; i += 1) {
 
 		visitHotelContainer[i].addEventListener('mouseenter', handleNavCircleEnter);
 		visitHotelContainer[i].addEventListener('mouseleave', handleNavCircleLeave);

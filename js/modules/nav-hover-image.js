@@ -1,5 +1,4 @@
 export default function showNavImage() {
-
 	const hiltonLink = document.querySelector('.link__image-hilton');
 	const crockfordsLink = document.querySelector('.link__image-crockfords');
 	const conradLink = document.querySelector('.link__image-conrad');

@@ -4,7 +4,6 @@ import pauseVideo from './modules/pause-video.js';
 import scrollExplore from './modules/scroll-explore.js';
 import headerMobileColor from './modules/header-mobile-color.js';
 import pauseAboutVideo from './modules/pause-about-video.js';
-import buttonCircle from './modules/button-circle.js';
 import visitHotelArrow from './modules/visit-hotel-arrow.js';
 import expandHotelsContainer from './modules/expand-hotels.js';
 
@@ -15,7 +14,6 @@ pauseVideo();
 scrollExplore();
 headerMobileColor();
 pauseAboutVideo();
-buttonCircle();
 visitHotelArrow();
 expandHotelsContainer();
 

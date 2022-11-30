@@ -1,0 +1,13 @@
+.section__dining {
+	display: flex;
+	align-items: center;
+	width: 160vw;
+	height: 100vh;
+	padding: 1rem;
+	background-color: rgba(128, 128, 128, 0.277);
+}
+
+.dining__h2 {
+	font-size: 3rem;
+	color: var(--gold-color);
+}

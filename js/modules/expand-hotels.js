@@ -1,4 +1,5 @@
 export default function expandHotelsContainer() {
+	let selectedHotell = null; //"hilton" "conrad"
 
 	const expandHilton = document.querySelector('.expand-hilton');
 	const expandCrockfords = document.querySelector('.expand-crockfords');

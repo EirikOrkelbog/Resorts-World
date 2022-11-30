@@ -20,11 +20,11 @@ export default function pauseVideo() {
 
 	// Mobile pause/play
 
-	const play = document.querySelector('.play');
-	const pause = document.querySelector('.pause');
+	const mobilePlayPause = document.querySelectorAll('.mobile__play-pause');
 
-	play.addEventListener('click', handlePlayClick);
-	pause.addEventListener('click', handlePauseClick);
+	mobilePlayPause[0].addEventListener('click', handlePlayClick);
+	mobilePlayPause[1].addEventListener('click', handlePauseClick);
+	
 
 	function handlePlayClick(event) {
 		videoPlayPause();
@@ -38,11 +38,13 @@ export default function pauseVideo() {
 
 	function hideIcon() {
 		if (backgroundVideo.paused) {
-			play.style.display = 'block';
-			pause.style.display = 'none';
+			mobilePlayPause[0].classList.add('play');
+			mobilePlayPause[1].classList.remove('pause');
 		} else if (!backgroundVideo.paused) {
-			play.style.display = 'none';
-			pause.style.display = 'block';
+			mobilePlayPause[1].classList.add('pause');
+			mobilePlayPause[0].classList.remove('play');
+
 		}
 	}
+
 }
