@@ -1,13 +1,109 @@
 .section__dining {
 	display: flex;
-	align-items: center;
-	width: 160vw;
-	height: 100vh;
+	flex-direction: column;
+	width: 100vw;
+	height: 100%;
 	padding: 1rem;
-	background-color: rgba(128, 128, 128, 0.277);
+	background-color: var(--white-color);
+}
+
+.dining__image-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.dining__wrapper-position {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.dining__h2-position {
+	display: flex;
+	justify-content: flex-end;
 }
 
 .dining__h2 {
-	font-size: 3rem;
+	font-size: 4rem;
 	color: var(--gold-color);
+}
+
+.dining__image-large {
+	width: 100%;
+	margin: 1rem 0;
+}
+
+.dining__image-small {
+	width: 35%;
+}
+
+.dining__image-hidden {
+	display: none;
+}
+
+
+@media screen and (min-width: 576px) {
+	.dining__h2 {
+		font-size: 6rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.dining__h2 {
+		font-size: 8rem;
+	}
+
+	.dining__h2-position {
+		justify-content: flex-start;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.dining__image-large {
+		width: 80%;
+	}
+
+	.dining__image {
+		display: flex;
+		justify-content: center;
+	}
+
+	.dining__h2 {
+		font-size: 10rem;
+	}
+
+	.dining__image-wrapper {
+		gap: 2rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.section__dining {
+		flex-direction: row;
+		align-items: center;
+		width: 160vw;
+		height: 100vh;
+	}
+
+	.dining__image-hidden {
+		display: block;
+		width: 20%;
+		margin-right: 1rem;
+	}
+ 
+	.dining__image-large {
+		width: 100%;
+	}
+
+	.dining__image {
+		display: block;
+		margin: 0 1rem;
+	}
+
+	.image__small-hidden {
+		display: none;
+	}
+
+
+
 }
