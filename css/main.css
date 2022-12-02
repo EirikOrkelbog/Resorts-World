@@ -6,7 +6,7 @@
 @import './modules/nav.css';
 @import './modules/nav-mobile.css';
 @import './modules/header.css';
-@import './modules/footer-white.css';
+@import './modules/footer-desktop.css';
 @import './modules/pause-video.css';
 @import './modules/scroll-explore.css';
 @import './modules/s-about.css';
@@ -16,5 +16,7 @@
 @import './modules/s-entertainment.css';
 @import './modules/s-dining.css';
 @import './modules/s-restaurants.css';
+@import './modules/s-planning.css';
+@import './modules/footer.css';
 
 

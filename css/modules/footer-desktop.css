@@ -1,4 +1,4 @@
-.footer__white {
+.footer__desktop {
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
@@ -43,7 +43,7 @@
 
 
 @media screen and (min-width: 1200px) {
-	.footer__white {
+	.footer__desktop {
 		display: flex;
 	}
 }
