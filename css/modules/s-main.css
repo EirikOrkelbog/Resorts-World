@@ -119,14 +119,3 @@
 		display: none;
 	}
 }
-
-@media screen and (min-width: 1400px) {
-	.h1 {
-		font-size: 15rem;
-	}
-
-	.h1__second-span {
-		margin-top: -6.5rem;
-	}
-
-}

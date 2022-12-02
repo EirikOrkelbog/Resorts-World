@@ -1,6 +1,5 @@
 .section__restaurants {
 	background-color: var(--red-color);
-
 }
 
 .restaurants__information {
@@ -89,6 +88,7 @@
 .slideshow__image {
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
 }
 
 .slide__visible {
@@ -123,4 +123,75 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 576px) {
+	.information__changing-h3 {
+		font-size: 4rem;
+	}
+
+	.navigation__text-h5 {
+		font-size: 1rem;
+	}
+
+	.information__navigation {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.navigation__text-wrapper {
+		padding: 0 1rem 1rem 1rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.navigation__text-wrapper {
+		padding: 0 2rem 1rem 2rem;
+	}
+
+	.information__changing-h3 {
+		font-size: 5rem;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.navigation__text-wrapper {
+		padding: 0 4.5rem 1rem 4.5rem;
+	}
+
+	.information__changing-h3 {
+		font-size: 6rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.section__restaurants {
+		display: flex;
+	}
+
+	.restaurants__information {
+		width: 60vw;
+		height: 100vh;
+	}
+
+	.restaurants__image {
+		width: 40vw;
+		height: 100vh;
+	}
+
+	.restaurants__paragraph {
+		display: none;
+	}
+
+	.navigation__text-wrapper {
+		padding: 0 4.5rem 2rem 4.5rem;
+	}
+
+	.information__navigation {
+		margin-bottom: 2rem;
+	}
+
+	.information__top {
+		margin-top: 3rem;
+	}
 }

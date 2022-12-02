@@ -36,3 +36,23 @@
 		font-size: 1rem;
 	}
 }
+
+@media screen and (min-width: 1200px) {
+	.footer {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.footer__social {
+		position: relative;
+	}
+
+	.footer__mobile-policy {
+		flex-direction: row;
+	}
+
+	.footer__copyright {
+		margin-top: 0rem;
+	}
+}

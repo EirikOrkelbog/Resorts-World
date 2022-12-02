@@ -5,7 +5,8 @@ body {
 }
 
 main {
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
+	background-color: black;
 }
 
 h2 {
@@ -30,7 +31,7 @@ button {
 @media screen and (min-width: 1200px) {
 	main {
 		display: flex;
-		width: 600vw;
+		width: 710vw;
 		overflow-y: hidden;
 		overflow-x: scroll;
 	}
