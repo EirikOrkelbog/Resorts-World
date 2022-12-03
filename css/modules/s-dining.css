@@ -104,6 +104,7 @@
 		display: none;
 	}
 
-
-
+	.dining__h2 {
+		font-size: 8rem;
+	}
 }

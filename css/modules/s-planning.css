@@ -98,5 +98,8 @@
 	.planning__circle-button {
 		top: 53%;
 	}
-	
+
+	.header__h2-stay {
+		margin-bottom: -3rem;
+	}
 }

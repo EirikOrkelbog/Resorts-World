@@ -37,33 +37,17 @@
 
 .information__navigation {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.navigation__text {
-	display: flex;
-	justify-content: space-between;
+.navigation__border-line {
+	border-bottom: 3px solid white;
 }
 
 .navigation__text-wrapper {
 	padding: 0 2rem 2rem 2rem;
-}
-
-.navigation__line {
-	position: relative;
-	width: 100%;
-	height: 2px;
-	background-color: rgba(255, 255, 255, 0.3);
-}
-
-.navigation__line-hover {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 33.3%;
-	height: 3px;
-	background-color: white;
+	cursor: pointer;
 }
 
 .restaurants__image {
@@ -95,6 +79,10 @@
 	display: block;
 }
 
+.information__slide-visible {
+	display: block;
+}
+
 .information__circle-button {
 	position: absolute;
 	top: 55%;
@@ -116,6 +104,10 @@
 	transition: .3s ease-in-out;
 	cursor: pointer;
 	background-color: var(--baige-color);
+}
+
+.circle__button:hover {
+	padding: 1.2rem 0;
 }
 
 .circle__button-icon {
@@ -158,10 +150,6 @@
 	.navigation__text-wrapper {
 		padding: 0 4.5rem 1rem 4.5rem;
 	}
-
-	.information__changing-h3 {
-		font-size: 6rem;
-	}
 }
 
 @media screen and (min-width: 1200px) {
@@ -184,7 +172,7 @@
 	}
 
 	.navigation__text-wrapper {
-		padding: 0 4.5rem 2rem 4.5rem;
+		padding: 0 2.3rem 2rem 2.3rem;
 	}
 
 	.information__navigation {
