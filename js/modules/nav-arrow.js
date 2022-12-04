@@ -13,7 +13,7 @@ export default function navArrow() {
 	}
 
 	function handleNavCircleLeave(event) {
-		translateArrowLeave();
+			translateArrowLeave();
 	}
 
 
