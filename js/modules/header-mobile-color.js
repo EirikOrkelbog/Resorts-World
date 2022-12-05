@@ -22,4 +22,5 @@ export default function headerMobileColor() {
 			bookButton.style.border = 'none'
 		}
 	}
+	console.log(window);
 }

@@ -12,31 +12,58 @@ export default function expandHotelsContainer() {
 	
 	function handleContainerClick(event, index) {
 		changeContainerIndex(index);
+		toggleExpand();
 		updateSlideshowHTML();
 	}
 	
-	let currentContainerIndex = 0;
+	let currentContainerIndex = null;
+	let expandedContent = false;
 
 	function changeContainerIndex(index) {
 		currentContainerIndex = index;
 	}
 
+	function toggleExpand() {
+		expandedContent = !expandedContent;
+	}
+
 	function updateSlideshowHTML() {
-		for (const container of containers) {
-			container.classList.remove('hotels__expand-active');
+		const windowWidth = window.innerWidth;
+
+		if (windowWidth > 1200 && expandedContent === true) {
+		
+			for (const container of containers) {
+				container.classList.remove('hotels__expand-active');
+			}
+
+			for (const item of content) {
+				item.classList.add('hotels__content-active');
+			}
+
+			for (const logo of hotelsLogo) {
+				logo.classList.remove('hotel__logo-hidden');
+			}
+
+			containers[currentContainerIndex].classList.add('hotels__expand-active');
+			content[currentContainerIndex].classList.remove('hotels__content-active');
+			hotelsLogo[currentContainerIndex].classList.add('hotel__logo-hidden');
+
+		} else {
+			for (const container of containers) {
+				container.classList.remove('hotels__expand-active');
+			}
+
+			for (const item of content) {
+				item.classList.add('hotels__content-active');
+			}
+
+			for (const logo of hotelsLogo) {
+				logo.classList.remove('hotel__logo-hidden');
+			}
+
+			containers[currentContainerIndex].classList.remove('hotels__expand-active');
+			content[currentContainerIndex].classList.add('hotels__content-active');
+			hotelsLogo[currentContainerIndex].classList.remove('hotel__logo-hidden');
 		}
-
-		for (const item of content) {
-			item.classList.add('hotels__content-active');
-		}
-
-		for (const logo of hotelsLogo) {
-			logo.classList.remove('hotel__logo-hidden');
-		}
-
-		containers[currentContainerIndex].classList.add('hotels__expand-active');
-		content[currentContainerIndex].classList.remove('hotels__content-active');
-		hotelsLogo[currentContainerIndex].classList.add('hotel__logo-hidden');
-
 	}
 }

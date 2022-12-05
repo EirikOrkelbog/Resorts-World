@@ -45,6 +45,10 @@
 	display: none;
 }
 
+.hotels__content {
+	display: none;
+}
+
 
 @media screen and (min-width: 992px) {
 	.hotels__expand-container {
