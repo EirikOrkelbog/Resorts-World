@@ -106,11 +106,15 @@
 	background-color: var(--baige-color);
 }
 
-.circle__button:hover {
-	padding: 1.2rem 0;
+.circle__button-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-.circle__button-icon {
+.circle__button-plus {
+	display: none;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -181,5 +185,17 @@
 
 	.information__top {
 		margin-top: 3rem;
+	}
+
+	.circle__button:hover > .circle__button-plus {
+		display: block;
+	}
+
+	.circle__button:hover {
+		padding: 1.2rem 0;
+	}
+	
+	.circle__button:hover > .circle__button-icon {
+		display: none;
 	}
 }

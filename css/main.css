@@ -9,14 +9,13 @@
 @import './modules/footer-desktop.css';
 @import './modules/pause-video.css';
 @import './modules/scroll-explore.css';
-@import './modules/s-about.css';
-@import './modules/s-hotels.css';
-@import './modules/s-main.css';
-@import './modules/button-circle.css';
-@import './modules/s-entertainment.css';
-@import './modules/s-dining.css';
-@import './modules/s-restaurants.css';
-@import './modules/s-planning.css';
+@import './modules/sections/about.css';
+@import './modules/sections/dining.css';
+@import './modules/sections/entertainment.css';
+@import './modules/sections/hotels.css';
+@import './modules/sections/main.css';
+@import './modules/sections/planning.css';
+@import './modules/sections/restaurants.css';
 @import './modules/footer.css';
 
 

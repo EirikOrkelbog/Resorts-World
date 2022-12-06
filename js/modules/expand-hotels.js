@@ -1,5 +1,4 @@
 export default function expandHotelsContainer() {
-	
 	const containers = document.querySelectorAll('.hotels__expand-container');
 	const content = document.querySelectorAll('.hotels__content');
 	const hotelsLogo = document.querySelectorAll('.hotel__logo');

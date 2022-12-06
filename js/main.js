@@ -1,5 +1,4 @@
 import navArrow from './modules/nav-arrow.js';
-import showNavImage from './modules/nav-hover-image.js';
 import pauseVideo from './modules/pause-video.js';
 import scrollExplore from './modules/scroll-explore.js';
 import headerMobileColor from './modules/header-mobile-color.js';
@@ -10,7 +9,6 @@ import restaurantChangeContent from './modules/restaurant-change-content.js';
 
 
 navArrow();
-showNavImage();
 pauseVideo();
 scrollExplore();
 headerMobileColor();

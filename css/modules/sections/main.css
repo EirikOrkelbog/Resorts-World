@@ -7,6 +7,7 @@
 	align-items: center;
 	justify-content: flex-end;
 	overflow: hidden;
+	isolation: isolate;
 }
 
 .section__main::after {

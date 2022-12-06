@@ -6,7 +6,7 @@
 	position: relative;
 	width: 100vw;
 	height: 150vh;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(../../assets/images/Wine_at_Resorts_World_Las_Vegas.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(../../../assets/images/Wine_at_Resorts_World_Las_Vegas.jpg);
 	background-position: center;
 	background-size: cover;
 	padding: 1rem;
@@ -46,7 +46,22 @@
 	transition: .3s ease-in-out;
 	cursor: pointer;
 	background-color: var(--red-color);
+	animation: buttonresize 3s infinite ease-in-out;
 }
+
+@keyframes buttonresize {
+	0% {
+		box-shadow: 0 0 0px rgb(216, 41, 58);
+	}
+ 
+	50% {
+		box-shadow: 0 0 15px rgb(216, 41, 58);
+	}
+
+	100% {
+		box-shadow: 0 0 0px rgb(216, 41, 58);
+	}
+ }
 
 .planning__paragraph {
 	text-align: center;
@@ -101,5 +116,17 @@
 
 	.header__h2-stay {
 		margin-bottom: -3rem;
+	}
+
+	.planning__button:hover {
+		padding: 1.3rem 0;
+	}
+
+	.planning__button:hover > .circle__button-plus {
+		display: block;
+	}
+
+	.planning__button:hover > .circle__button-icon {
+		display: none;
 	}
 }

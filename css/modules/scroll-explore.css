@@ -46,9 +46,7 @@
 	to {transform: translateY(0%) rotate(-90deg);}
  }
 
-
-
- @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 	.scroll__explore {
 		display: flex;
 	}

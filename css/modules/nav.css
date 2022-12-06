@@ -27,7 +27,20 @@
 	position: relative;
 }
 
+.hotel__link-hilton:hover > .link__image-hilton--hover {
+	display: block;
+}
+
+.hotel__link-crockfords:hover > .link__image-crockfords--hover {
+	display: block;
+}
+
+.hotel__link-conrad:hover > .link__image-conrad--hover {
+	display: block;
+}
+
 .link__image-hilton--hover {
+	display: none;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, 15%);
@@ -36,10 +49,10 @@
 	background: url(../../assets/images/RWLV_HILTON_HERO.webp);
 	background-position: center;
 	background-size: cover;
-	transition: .3s ease-in-out;
 }
 
 .link__image-crockfords--hover {
+	display: none;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, 15%);
@@ -48,10 +61,10 @@
 	background: url(../../assets/images/RWLV_CROCKFORDS_HERO.webp);
 	background-position: center;
 	background-size: cover;
-	transition: .3s ease-in-out;
 }
 
 .link__image-conrad--hover {
+	display: none;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, 15%);
@@ -60,7 +73,6 @@
 	background: url(../../assets/images/RWLV_CONRAD_HERO.webp);
 	background-position: center;
 	background-size: cover;
-	transition: .3s ease-in-out;
 }
 
 .nav__circle-container {

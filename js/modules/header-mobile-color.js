@@ -1,7 +1,6 @@
 export default function headerMobileColor() {
-
 	const header = document.querySelector('.header');
-	const bookButton = document.querySelector('.mobile__button-book');
+	const buttonBook = document.querySelector('.button__book');
 
 	window.addEventListener('scroll', handleHeaderScroll);
 
@@ -13,14 +12,11 @@ export default function headerMobileColor() {
 		const scrollY = window.scrollY;
 
 		if (scrollY > 0) {
-			header.style.backgroundColor = 'white';
-			bookButton.style.backgroundColor = 'black';
-			bookButton.style.border = '1px solid white'
+			header.classList.add('header__mobile');
+			buttonBook.classList.add('button__book-scroll');
 		} else {
-			header.style.backgroundColor = 'transparent';
-			bookButton.style.backgroundColor = 'rgb(216, 41, 58)';
-			bookButton.style.border = 'none'
+			header.classList.remove('header__mobile');
+			buttonBook.classList.remove('button__book-scroll');
 		}
 	}
-	console.log(window);
 }

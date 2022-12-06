@@ -55,10 +55,6 @@
 	cursor: pointer;
 }
 
-.buy-tickets__button:hover {
-	padding: 1.2rem;
-}
-
 .entertainment__h3 {
 	font-size: var(--font-size-large);
 	text-transform: uppercase;
@@ -193,5 +189,9 @@
 	.entertainment__h3 {
 		font-size: 2rem;
 		text-align: right;
+	}
+
+	.buy-tickets__button:hover {
+		padding: 1.2rem;
 	}
 }

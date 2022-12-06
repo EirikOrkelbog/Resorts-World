@@ -5,10 +5,6 @@
 	position: relative;
 }
 
-.mobile__social-link {
-	width: 1.3rem;
-}
-
 .footer__mobile-policy {
 	display: flex;
 	flex-direction: column;
@@ -28,10 +24,6 @@
 }
 
 @media screen and (min-width: 768px) {
-	.mobile__social-link {
-		width: 1.5rem;
-	}
-
 	.footer__copyright {
 		font-size: 1rem;
 	}
