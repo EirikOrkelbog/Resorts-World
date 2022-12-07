@@ -68,6 +68,7 @@
 	transform: translate(-50%, -50%);
 }
 
+/* Show svg text and icon with red color */
 .play-sound__red {
 	display: block;
 }
@@ -80,6 +81,7 @@
 	display: block;
 }
 
+/* Hide svg text and icon with baige color */
 .play-sound {
 	display: none;
 }
@@ -91,7 +93,6 @@
 .play-icon {
 	display: none;
 }
-
 
 @media screen and (min-width: 768px) {
 	.about__video {

@@ -18,14 +18,25 @@ export default function expandHotelsContainer() {
 	let currentContainerIndex = null;
 	let expandedContent = false;
 
+	/**
+	 * Changes the variable from null to the index of the container that is clicked 
+	 * 
+	 * @param {number} index The index position
+ 	*/
 	function changeContainerIndex(index) {
 		currentContainerIndex = index;
 	}
 
+	/**
+	 * Changes the variable from false to true 
+ 	*/
 	function toggleExpand() {
 		expandedContent = !expandedContent;
 	}
 
+	/**
+	 * Updates all the html when a container is clicked on   
+ 	*/
 	function updateSlideshowHTML() {
 		const windowWidth = window.innerWidth;
 

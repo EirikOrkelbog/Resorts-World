@@ -49,13 +49,37 @@
 	display: none;
 }
 
+.arrow {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: .6rem;
+	transition: .3s ease-in-out;
+}
+
+.arrow__hotel-hidden {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-400%, -50%);
+	width: .6rem;
+	transition: .3s ease-in-out;
+}
+
+.visit-hotel__container:hover > .hotels__button-circle .arrow {
+	transform: translate(400%, -50%);
+}
+
+.visit-hotel__container:hover > .hotels__button-circle .arrow__hotel-hidden {
+	transform: translate(-50%, -50%);
+}
 
 @media screen and (min-width: 992px) {
 	.hotels__expand-container {
 		height: 55vh;
 	}
 }
-
 
 @media screen and (min-width: 1200px) {
 	.section__hotels {
@@ -116,24 +140,6 @@
 		align-items: center;
 		gap: .3rem;
 		margin-top: 2rem;
-	}
-
-	.arrow {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: .6rem;
-		transition: .3s ease-in-out;
-	}
-	
-	.arrow__hotel-hidden {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-400%, -50%);
-		width: .6rem;
-		transition: .3s ease-in-out;
 	}
 
 	.hotels__expand-active {

@@ -187,6 +187,7 @@
 		margin-top: 3rem;
 	}
 
+	/* Moves text with padding and changes arrow icon with a plus icon */
 	.circle__button:hover > .circle__button-plus {
 		display: block;
 	}

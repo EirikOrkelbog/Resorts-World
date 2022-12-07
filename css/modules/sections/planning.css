@@ -46,10 +46,11 @@
 	transition: .3s ease-in-out;
 	cursor: pointer;
 	background-color: var(--red-color);
-	animation: buttonresize 3s infinite ease-in-out;
+	animation: buttonglow 3s infinite ease-in-out;
 }
 
-@keyframes buttonresize {
+/* Red box-shadow that loops infinite */
+@keyframes buttonglow {
 	0% {
 		box-shadow: 0 0 0px rgb(216, 41, 58);
 	}
@@ -66,7 +67,6 @@
 .planning__paragraph {
 	text-align: center;
 }
-
 
 @media screen and (min-width: 576px) {
 	.planning__button {

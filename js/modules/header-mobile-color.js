@@ -1,6 +1,5 @@
 export default function headerMobileColor() {
 	const header = document.querySelector('.header');
-	const buttonBook = document.querySelector('.button__book');
 
 	window.addEventListener('scroll', handleHeaderScroll);
 
@@ -8,15 +7,16 @@ export default function headerMobileColor() {
 		changeColorOnScroll();
 	}
 
+	/**
+	 * Adds a class and removes another class when we scroll just one pixel down  
+ 	*/
 	function changeColorOnScroll() {
 		const scrollY = window.scrollY;
 
 		if (scrollY > 0) {
 			header.classList.add('header__mobile');
-			buttonBook.classList.add('button__book-scroll');
 		} else {
 			header.classList.remove('header__mobile');
-			buttonBook.classList.remove('button__book-scroll');
 		}
 	}
 }

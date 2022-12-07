@@ -9,6 +9,9 @@ export default function pauseVideo() {
 		videoPlayPause();
 	}
 
+	/**
+	 * Toggles play and pause of video
+ 	*/
 	function videoPlayPause() {
 		if (backgroundVideo.paused) {
 			backgroundVideo.play();
@@ -17,9 +20,7 @@ export default function pauseVideo() {
 		}
 	}
 
-
 	// Mobile pause/play
-
 	const mobilePlayPause = document.querySelectorAll('.mobile__play-pause');
 
 	mobilePlayPause[0].addEventListener('click', handlePlayClick);
@@ -36,6 +37,9 @@ export default function pauseVideo() {
 		hideIcon();
 	}
 
+	/**
+	 * Shows the correct icon based on paused or playing video  
+ 	*/
 	function hideIcon() {
 		if (backgroundVideo.paused) {
 			mobilePlayPause[0].classList.add('play');

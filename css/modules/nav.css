@@ -6,6 +6,7 @@
 	mix-blend-mode: difference;
 }
 
+/* Underline from left to right on hover */
 .hotel__link::after {
 	content: "";
 	display: block;
@@ -27,6 +28,7 @@
 	position: relative;
 }
 
+/* Shows image on hover */
 .hotel__link-hilton:hover > .link__image-hilton--hover {
 	display: block;
 }
@@ -90,9 +92,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: rgb(216, 41, 58);
+	background-color: var(--baige-color);
 	overflow: hidden;
-	isolation: isolate;
 }
 
 .nav__arrow {
@@ -111,6 +112,14 @@
 	transform: translate(-400%, -50%);
 	width: .6rem;
 	transition: .3s ease-in-out;
+}
+
+.nav__circle-container:hover > .nav__circle .nav__arrow {
+	transform: translate(400%, -50%);
+}
+
+.nav__circle-container:hover > .nav__circle .arrow-hidden {
+	transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 1200px) {

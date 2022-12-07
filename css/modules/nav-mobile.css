@@ -2,11 +2,11 @@
 	display: flex;
 	align-items: center;
 	gap: .5rem;
-	mix-blend-mode: difference;
 }
 
 .mobile__dropdown {
 	cursor: pointer;
+	mix-blend-mode: difference;
 }
 
 .mobile__dropdown-button {
@@ -16,17 +16,16 @@
 	font-size: var(--font-size-regular);
 }
 
-.mobile__button-book {
-	background-color: var(--red-color);
-	border: none;
-	font-size: var(--font-size-small);
-	color: var(--white-color);
-	padding: .4rem .8rem;
-	border-radius: 30px;
-}
-
 .expand__dropdown-icon {
 	width: .7rem;
+}
+
+.button__book {
+	padding: .5rem 1rem;
+	border-radius: 20px;
+	border: none;
+	color: var(--white-color);
+	background-color: var(--red-color);
 }
 
 @media screen and (min-width: 768px) {

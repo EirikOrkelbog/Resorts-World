@@ -8,23 +8,11 @@
 	left: 0;
 	padding: 1rem;
 	z-index: 99;
+	background-blend-mode: difference;
 }
 
 .header__mobile {
 	background-color: var(--white-color);
-}
-
-.button__book {
-	padding: .5rem 1rem;
-	border-radius: 20px;
-	border: none;
-	color: var(--white-color);
-	background-color: var(--red-color);
-}
-
-.button__book-scroll {
-	background-color: black;
-	border: 1px solid white;
 }
 
 .header__logo {

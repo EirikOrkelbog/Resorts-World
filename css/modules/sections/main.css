@@ -7,7 +7,6 @@
 	align-items: center;
 	justify-content: flex-end;
 	overflow: hidden;
-	isolation: isolate;
 }
 
 .section__main::after {
@@ -46,6 +45,7 @@
 	width: 100vw;
 }
 
+/* Linear background inside h1 text */
 .h1__second-span {
 	display: block;
 	width: 100vw;
@@ -82,7 +82,6 @@
 .pause {
 	display: block;
 }
-
 
 @media screen and (min-width: 768px) {
 	.h1 {

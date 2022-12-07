@@ -1,15 +1,15 @@
 :root {
-	--background-color: rgb(216, 41, 58);
-	--secondary-background-color: rgb(255, 255, 255);
+	--background-color: #d8293a;
+	--secondary-background-color: #ffffff;
 
-	--baige-color: rgb(239, 219, 192);
-	--white-color: rgb(255, 255, 255);
-	--darkerWhite-color: rgb(240, 229, 216);
-	--black-color: rgb(0, 0, 0);
-	--red-color: rgb(216, 41, 58);
-	--gold-color: rgb(156, 139, 112);
-	--darkBlue-color: rgb(27, 32, 48);
-	--lightBlue-color: rgb(105, 115, 144);
+	--baige-color: #efdbc0;
+	--white-color: #ffffff;
+	--darkerWhite-color: #f0e5d8;
+	--black-color: #000000;
+	--red-color: #d8293a;
+	--gold-color: #9c8b70;
+	--darkBlue-color: #1b2030;
+	--lightBlue-color: #697390;
 	
 	--padding: 1rem;
 

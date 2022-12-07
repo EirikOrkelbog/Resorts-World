@@ -51,7 +51,6 @@
 	justify-content: space-between;
 	padding: 1rem 0;
 	background-color: var(--baige-color);
-	transition: .3s ease-in-out;
 	cursor: pointer;
 }
 
@@ -85,9 +84,27 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -400%);
+	transform: translate(-400%, -50%);
+	transition: .3s ease-in-out;
 }
 
+.tickets__arrow {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: .3s ease-in-out;
+}
+
+.entertainment__wrapper:hover > .buy-tickets__circle .tickets__arrow {
+	transform: translate(400%, -50%);
+
+}
+
+.entertainment__wrapper:hover > .buy-tickets__circle .tickets__arrow-hidden {
+	transform: translate(-50%, -50%);
+
+}
 
 @media screen and (min-width: 768px) {
 	.entertainment__image {
@@ -103,6 +120,12 @@
 		right: 5%;
 	}
 
+	.entertainment__wrapper {
+		display: flex;
+		align-items: center;
+		gap: .5rem;
+		cursor: pointer;
+	}
 }
 
 @media screen and (min-width: 992px) {
@@ -174,6 +197,10 @@
 		width: .6rem;
 	}
 
+	.tickets__arrow-hidden {
+		width: .6rem;
+	}
+
 	.entertainment__buy-tickets {
 		margin: 1rem 0 3rem 0;
 	}
@@ -189,9 +216,5 @@
 	.entertainment__h3 {
 		font-size: 2rem;
 		text-align: right;
-	}
-
-	.buy-tickets__button:hover {
-		padding: 1.2rem;
 	}
 }
